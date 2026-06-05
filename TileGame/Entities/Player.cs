@@ -20,11 +20,16 @@ public class Player : Creature
     private int _animFrame;
     private float _animTimer;
 
+    private readonly Vector2 _spawnPosition;
+
     public Player(Vector2 startPosition, Texture2D sheet) : base(maxHealth: 5)
     {
+        _spawnPosition = startPosition;
         Position = startPosition;
         _sheet   = sheet;
     }
+
+    public void Respawn() => Respawn(_spawnPosition);
 
     public void Update(InputState input, TileMap map, IReadOnlyList<Seeker> enemies, GameTime gameTime)
     {

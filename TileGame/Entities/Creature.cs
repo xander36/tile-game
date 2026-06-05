@@ -22,6 +22,14 @@ public abstract class Creature : Entity
         Health = maxHealth;
     }
 
+    protected void Respawn(Vector2 position)
+    {
+        Position = position;
+        Health = MaxHealth;
+        FreezeTimer = 0f;
+        _hurtFlash = 0f;
+    }
+
     public void TakeDamage(int damage, Vector2 knockbackDir, TileMap map)
     {
         if (IsDead) return;
