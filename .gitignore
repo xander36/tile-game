@@ -17,3 +17,6 @@ TileGame/Content/obj/
 # OS
 .DS_Store
 Thumbs.db
+
+# Reference source
+ref/
