@@ -1,0 +1,19 @@
+# Build outputs
+bin/
+obj/
+
+# MonoGame Content Builder
+*.mgcb.release
+*.mgcb.debug
+TileGame/Content/bin/
+TileGame/Content/obj/
+
+# .NET
+*.user
+*.suo
+.vs/
+*.userprefs
+
+# OS
+.DS_Store
+Thumbs.db
